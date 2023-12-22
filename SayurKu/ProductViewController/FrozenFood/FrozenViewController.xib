@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FrozenViewController" customModule="SayurKu" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="rJ5-Az-TBx" id="epz-sz-Ymd"/>
+                <outlet property="frozenFoodCollection" destination="FZk-qq-ttr" id="Vlm-f2-qgz"/>
+                <outlet property="searchBar" destination="J3G-rE-40L" id="3cn-Bu-b37"/>
+                <outlet property="shoppingChartButton" destination="4XL-gb-0Ld" id="apK-AP-ecF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ5-Az-TBx">
+                    <rect key="frame" x="10" y="30" width="77.333333333333329" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="kKk-9j-JkS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XL-gb-0Ld">
+                    <rect key="frame" x="359" y="30" width="45" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="7QU-Ri-KYH"/>
+                        <constraint firstAttribute="height" constant="35" id="AwU-nL-n9x"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="buy chart"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J3G-rE-40L">
+                    <rect key="frame" x="50" y="85" width="314" height="45"/>
+                    <color key="backgroundColor" name="PinkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="VZv-dE-Pwu"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FZk-qq-ttr">
+                    <rect key="frame" x="20" y="150" width="374" height="586"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KWc-OR-R57">
+                        <size key="itemSize" width="162" height="250"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="J3G-rE-40L" firstAttribute="top" secondItem="rJ5-Az-TBx" secondAttribute="bottom" constant="20" id="0h9-u2-FKp"/>
+                <constraint firstItem="FZk-qq-ttr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6IO-am-lbQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FZk-qq-ttr" secondAttribute="trailing" constant="20" id="AEt-2q-QjP"/>
+                <constraint firstItem="FZk-qq-ttr" firstAttribute="top" secondItem="J3G-rE-40L" secondAttribute="bottom" constant="20" id="ASv-Q8-2he"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4XL-gb-0Ld" secondAttribute="trailing" constant="10" id="Cie-Ub-j4E"/>
+                <constraint firstItem="4XL-gb-0Ld" firstAttribute="centerY" secondItem="rJ5-Az-TBx" secondAttribute="centerY" id="Fc7-mc-OlH"/>
+                <constraint firstItem="rJ5-Az-TBx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="K17-a2-Xqj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FZk-qq-ttr" secondAttribute="bottom" id="MIG-rw-eTR"/>
+                <constraint firstItem="J3G-rE-40L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="RTm-LA-CT2"/>
+                <constraint firstItem="rJ5-Az-TBx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Zia-lA-Chm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J3G-rE-40L" secondAttribute="trailing" constant="50" id="bvT-17-BZQ"/>
+            </constraints>
+            <point key="canvasLocation" x="117" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buy chart" width="48" height="48"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <namedColor name="PinkColor">
+            <color red="0.7686274509803922" green="0.25098039215686274" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

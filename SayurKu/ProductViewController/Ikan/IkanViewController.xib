@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IkanViewController" customModule="SayurKu" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Iun-Dc-avB" id="15t-y0-UXF"/>
+                <outlet property="ikanCollection" destination="n1r-pr-2KT" id="cdv-5h-440"/>
+                <outlet property="searchBar" destination="dWH-a0-Ykt" id="bfe-d2-CK3"/>
+                <outlet property="shoppingChart" destination="95g-og-aLL" id="kma-u3-2zJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95g-og-aLL">
+                    <rect key="frame" x="359" y="30" width="45" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="PEW-rC-tVO"/>
+                        <constraint firstAttribute="height" constant="35" id="qX2-8W-fvH"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button" image="buy chart"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-a0-Ykt">
+                    <rect key="frame" x="50" y="85" width="314" height="45"/>
+                    <color key="backgroundColor" name="PinkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="8hZ-NZ-z8O"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iun-Dc-avB">
+                    <rect key="frame" x="10" y="30" width="77.333333333333329" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="fR4-ju-yjc"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="n1r-pr-2KT">
+                    <rect key="frame" x="20" y="150" width="374" height="586"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6bh-E2-o35">
+                        <size key="itemSize" width="162" height="250"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dWH-a0-Ykt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="02q-oj-6DY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dWH-a0-Ykt" secondAttribute="trailing" constant="50" id="0Dv-1D-T84"/>
+                <constraint firstItem="n1r-pr-2KT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ce3-3V-CSm"/>
+                <constraint firstItem="Iun-Dc-avB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Inv-8p-ebP"/>
+                <constraint firstItem="95g-og-aLL" firstAttribute="centerY" secondItem="Iun-Dc-avB" secondAttribute="centerY" id="JTb-w2-Rp1"/>
+                <constraint firstItem="95g-og-aLL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="MlE-k7-kyn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n1r-pr-2KT" secondAttribute="trailing" constant="20" id="RlG-DR-dzC"/>
+                <constraint firstItem="dWH-a0-Ykt" firstAttribute="top" secondItem="Iun-Dc-avB" secondAttribute="bottom" constant="20" id="XFk-s4-dbQ"/>
+                <constraint firstItem="n1r-pr-2KT" firstAttribute="top" secondItem="dWH-a0-Ykt" secondAttribute="bottom" constant="20" id="cXM-94-dXh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="n1r-pr-2KT" secondAttribute="bottom" id="ntP-SG-ArG"/>
+                <constraint firstItem="Iun-Dc-avB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="qtU-0O-jQk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="95g-og-aLL" secondAttribute="trailing" constant="10" id="xwe-XH-xVv"/>
+            </constraints>
+            <point key="canvasLocation" x="117" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buy chart" width="48" height="48"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <namedColor name="PinkColor">
+            <color red="0.7686274509803922" green="0.25098039215686274" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BumbuViewController" customModule="SayurKu" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Uql-ju-hoS" id="q6v-MP-QZt"/>
+                <outlet property="bumbuDapurCollection" destination="Qwg-Mh-oGc" id="kEJ-6C-GQN"/>
+                <outlet property="searchBar" destination="hzK-De-oUF" id="oS8-z2-mJb"/>
+                <outlet property="shoppingChart" destination="REf-ja-7MZ" id="8U2-El-sNR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uql-ju-hoS">
+                    <rect key="frame" x="10" y="30" width="78" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="RY5-sB-0Cr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REf-ja-7MZ">
+                    <rect key="frame" x="359" y="30" width="45" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="89w-2Z-awf"/>
+                        <constraint firstAttribute="width" constant="45" id="tS2-rT-mar"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="buy chart"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-De-oUF">
+                    <rect key="frame" x="50" y="85" width="314" height="45"/>
+                    <color key="backgroundColor" name="GreenWelcome"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Gy4-kK-3yh"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qwg-Mh-oGc">
+                    <rect key="frame" x="20" y="150" width="374" height="586"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NgF-0q-sJM">
+                        <size key="itemSize" width="162" height="250"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qwg-Mh-oGc" firstAttribute="top" secondItem="hzK-De-oUF" secondAttribute="bottom" constant="20" id="Bv4-WZ-gNW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qwg-Mh-oGc" secondAttribute="bottom" id="IvW-YW-cKK"/>
+                <constraint firstItem="hzK-De-oUF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Pn9-bU-pgf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qwg-Mh-oGc" secondAttribute="trailing" constant="20" id="QOB-kR-loy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hzK-De-oUF" secondAttribute="trailing" constant="50" id="alB-TQ-2we"/>
+                <constraint firstItem="Uql-ju-hoS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="cbK-JL-rbh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="REf-ja-7MZ" secondAttribute="trailing" constant="10" id="i2W-Ky-ryB"/>
+                <constraint firstItem="REf-ja-7MZ" firstAttribute="centerY" secondItem="Uql-ju-hoS" secondAttribute="centerY" id="kFU-6Y-nW4"/>
+                <constraint firstItem="hzK-De-oUF" firstAttribute="top" secondItem="Uql-ju-hoS" secondAttribute="bottom" constant="20" id="l15-Yr-F3A"/>
+                <constraint firstItem="Qwg-Mh-oGc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rH6-Rv-G4q"/>
+                <constraint firstItem="Uql-ju-hoS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="tKi-4r-eHA"/>
+            </constraints>
+            <point key="canvasLocation" x="79" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buy chart" width="48" height="48"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <namedColor name="GreenWelcome">
+            <color red="0.22745098039215686" green="0.75686274509803919" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

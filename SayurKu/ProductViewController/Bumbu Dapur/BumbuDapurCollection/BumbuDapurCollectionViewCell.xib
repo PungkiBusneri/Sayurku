@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BumbuDapurCollectionViewCell" customModule="SayurKu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="434"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="434"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7j-Ek-W33">
+                        <rect key="frame" x="10" y="15" width="309" height="327"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="327" id="g5t-X7-4ei"/>
+                            <constraint firstAttribute="width" constant="309" id="oOW-gj-7LV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mom-1c-6fv">
+                        <rect key="frame" x="138.33333333333334" y="347" width="53.333333333333343" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="CpA-Cx-8Z9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acw-Ig-fQx">
+                        <rect key="frame" x="146.66666666666666" y="377" width="37" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Ker-sN-ask"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FG-xl-FB1">
+                        <rect key="frame" x="120" y="400" width="90" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="PSy-Be-TX6"/>
+                            <constraint firstAttribute="height" constant="25" id="RV6-F8-9GY"/>
+                        </constraints>
+                        <color key="tintColor" name="PinkColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Tambah">
+                            <color key="baseBackgroundColor" name="PinkColor"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="mom-1c-6fv" firstAttribute="top" secondItem="g7j-Ek-W33" secondAttribute="bottom" constant="5" id="2dJ-qp-UwF"/>
+                <constraint firstItem="Acw-Ig-fQx" firstAttribute="top" secondItem="mom-1c-6fv" secondAttribute="bottom" constant="5" id="3Of-zZ-vIM"/>
+                <constraint firstItem="8FG-xl-FB1" firstAttribute="top" secondItem="Acw-Ig-fQx" secondAttribute="bottom" constant="8" id="Bal-eH-KN4"/>
+                <constraint firstItem="mom-1c-6fv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="CfH-sj-uYJ"/>
+                <constraint firstItem="g7j-Ek-W33" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="H0d-g0-QoB"/>
+                <constraint firstItem="Acw-Ig-fQx" firstAttribute="centerX" secondItem="mom-1c-6fv" secondAttribute="centerX" id="HdG-aq-2qv"/>
+                <constraint firstItem="8FG-xl-FB1" firstAttribute="centerX" secondItem="mom-1c-6fv" secondAttribute="centerX" id="Zgz-10-ily"/>
+                <constraint firstAttribute="bottom" secondItem="8FG-xl-FB1" secondAttribute="bottom" constant="9" id="bdp-yM-N7m"/>
+                <constraint firstItem="g7j-Ek-W33" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="g6c-PZ-oGe"/>
+                <constraint firstAttribute="trailing" secondItem="g7j-Ek-W33" secondAttribute="trailing" constant="11" id="swj-ow-sro"/>
+            </constraints>
+            <size key="customSize" width="330" height="434"/>
+            <connections>
+                <outlet property="bumbuDapurImage" destination="g7j-Ek-W33" id="083-xR-if7"/>
+                <outlet property="buttonTambah" destination="8FG-xl-FB1" id="rgB-dd-yUp"/>
+                <outlet property="labelName" destination="mom-1c-6fv" id="Gah-qu-jN3"/>
+                <outlet property="labelPrice" destination="Acw-Ig-fQx" id="CQa-w2-VWe"/>
+            </connections>
+            <point key="canvasLocation" x="303.81679389312978" y="92.957746478873247"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PinkColor">
+            <color red="0.7686274509803922" green="0.25098039215686274" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
